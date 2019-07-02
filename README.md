@@ -107,7 +107,7 @@
 
 ###### Использование API
 jQuery
-```json
+```
 $.ajax({
   	url: 'https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1',
   	/*HTTP url: 'http://nossl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&proxy=0 или 1&info=0 или 1', */    
