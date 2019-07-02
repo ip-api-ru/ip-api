@@ -118,7 +118,7 @@ $.ajax({
 });
 ```
 Node.js
-```json
+```js
 const request = require('request-promise')
 request('https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1')
 /* HTTP request('http://nossl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1') */
