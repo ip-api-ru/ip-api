@@ -152,5 +152,5 @@ val result = URL("https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&q
 ```
 
 
-Официальный сайт сервиса IP-API: https://ip-api.ru/
-Документация по всем API: https://ip-api.ru/documentation/ или https://github.com/ip-api-ru/
+- Официальный сайт сервиса IP-API: https://ip-api.ru/
+- Документация по всем API: https://ip-api.ru/documentation/ или https://github.com/ip-api-ru/
