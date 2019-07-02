@@ -109,52 +109,46 @@
 jQuery
 ```json
 $.ajax({
-  type: "GET",
-  dataType: "json",
-  url: 'https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}',
-  /*HTTP url: 'http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&proxy={0 или 1}&info={0 или 1}', */
-  success: function(data) {
-    console.log(
-      'Ваш IP: ' + data.ip
-        + ' страна: ' + data.country
-        + ' город: ' + data.city
-    );
-    
-  }
+  	url: 'https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1',
+  	/*HTTP url: 'http://nossl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&proxy=0 или 1&info=0 или 1', */    
+  	dataType: 'json',
+    success: function(data) {
+        alert(data.query + '\n' + data.isp + '\n' + data.country + '\n' + data.city);
+    }
 });
 ```
 Node.js
 ```json
 const request = require('request-promise')
-request('https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}')
-/* HTTP request('http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&proxy={0 или 1}&info={0 или 1}') */
+request('https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1')
+/* HTTP request('http://nossl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1') */
 
   .then(response => console.log(JSON.parse(response)))
   .catch(err => console.log(err))
 ```
 php
 ```php
-$data = json_decode(file_get_contents('https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}'));
-/* HTTP $data = json_decode(file_get_contents('http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}')); */
+$data = json_decode(file_get_contents('https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1'));
+/* HTTP $data = json_decode(file_get_contents('http://nossl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1')); */
 var_dump($data);
 ```
 Python
 ```python
-requests.get('https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}')
-/* HTTP requests.get('http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}') */
+requests.get('https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1')
+/* HTTP requests.get('http://nossl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1') */
 ```
 Ruby
 ```ruby
 require 'json'
 require 'open-uri'
 
-JSON.parse(open('https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}').read)
-/* HTTP JSON.parse(open('http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}').read) */
+JSON.parse(open('https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1').read)
+/* HTTP JSON.parse(open('http://nossl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1').read) */
 ```
 Kotlin
 ```kotlin
-val result = URL("https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}").readText()
-/* HTTP val result = URL("http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}").readText() */
+val result = URL("https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1").readText()
+/* HTTP val result = URL("http://nossl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1").readText() */
 ```
 
 
