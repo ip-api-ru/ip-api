@@ -105,5 +105,49 @@
 |gini|Коэффициент Джини (Wiki)|33.7|Float
 |timeZones|Временные зоны страны|UTC+01:00 [0],[1],[2],[...],[10]|String|
 
+###### Использование API
+jQuery
+```jquery
+$.ajax({
+  type: "GET",
+  dataType: "json",
+  url: 'https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}',
+  /*HTTP url: 'http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&proxy={0 или 1}&info={0 или 1}', */
+  success: function(data) {
+    console.log(
+      'Ваш IP: ' + data.ip
+        + ' страна: ' + data.country
+        + ' город: ' + data.city
+    );
+    
+  }
+});
+```
+
+const request = require('request-promise')
+request('https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}')
+/* HTTP request('http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&proxy={0 или 1}&info={0 или 1}') */
+
+  .then(response => console.log(JSON.parse(response)))
+  .catch(err => console.log(err))
+
+$data = json_decode(file_get_contents('https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}'));
+/* HTTP $data = json_decode(file_get_contents('http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}')); */
+var_dump($data);
+
+requests.get('https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}')
+/* HTTP requests.get('http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}') */
+
+require 'json'
+require 'open-uri'
+
+JSON.parse(open('https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}').read)
+/* HTTP JSON.parse(open('http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}').read) */
+
+val result = URL("https://ssl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}").readText()
+/* HTTP val result = URL("http://nossl.ip-api.ru/ip-api.json?apiKey={ваш-api-ключ}&query={конкретный-IP-адрес}&proxy={0 или 1}&info={0 или 1}").readText() */
+
+
+
 Официальный сайт сервиса IP-API: https://ip-api.ru/
 Документация по всем API: https://ip-api.ru/documentation/ или https://github.com/ip-api-ru/
