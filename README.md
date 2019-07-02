@@ -56,3 +56,50 @@
     Пример URL на отправку запроса на получение максимальной информации по конкретному IP-адресу:
     https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=8.8.8.8&proxy=1&info=1
 
+Все возможные данные из ответа IP API:
+
+|Название|Описание|Пример|Тип|
+|as|AS номер (автономная система)|AS9009 M247 Ltd|String|
+|city|Город|Zurich|String|
+|country|Страна|Switzerland|String|
+|countryCode|Двухбуквенный код страны ISO 3166-1 alpha-2|CH|String|
+|isp|Интернет-провайдер|M247 Europe|String|
+|lat|Latitude (широта)|47.3769|Float|
+|lon|Longitude (долгота)|8.54169|Float|
+|org|Организация, которой принадлежит IP-адрес|M247 LTD|String|
+|query|Запрос|37.120.137.58|String|
+|region|Регион / штат / кантон|ZH|String|
+|regionName|Полное название региона / штата / кантона|Switzerland|String|
+|reverse|Доменные имена в обратной зоне DNS|String|
+|status|Статус запроса (fail - отклонен или success - выполнен)|success|String|
+|zip|zip / индекс|8010|String|
+|proxy|Дополнительный запрос (ключ proxy=1). Ответ yes на принадлежность IP-адреса сервисам анонимизации (proxy или vpn). No - IP-адрес не принадлежит сервисам анонимизации.|yes|String|
+|proxyType|Тип прокси / vpn (ipsec, openVPN и другие)|VPN|String|
+|proxyProvider|Компания, которая, возможно, предоставляет сервис анонимизации|AS9009 M247 Ltd|String|
+|countryInfo|Массив данных по дополнительному запросу по ключу info=1|	
+|fullCountryName|Полное название страны|Switzerland|String|
+|localizedName|Название страны на главном государственном языке|Schweiz|String|
+|topLevelDomain|Интернет-домены страны|.ch [0],[1],[2],[...],[10]|String|
+|alpha2Code|Двухбуквенный код страны ISO 3166-1 alpha-2|CH|String|
+|alpha3Code|Трехухбуквенный код страны ISO 3166-1 alpha-3|CHE|String|
+|numericCode|Цифровой код страны|756|String|
+|currencies|Государственная валюта|CHE [0],[1],[2],[...],[10]|String|
+|callingCodes|Телефонный код страны|41|String|
+|capital|Столица страны|Bern|String|
+|flagPng_100px|Ссылка на изображение государственного флага в формате PNG 100x100px. При отправке запроса без HTTPS ссылка на флаг будет подгружаться с домена http://cdn-nossl.ip-api.ru/|https://cdn-ssl.ip-api.ru/flags/png100/ch.png|String|
+|flagPng_250px|Ссылка на изображение государственного флага в формате PNG 250x250px. При отправке запроса без HTTPS ссылка на флаг будет подгружаться с домена http://cdn-nossl.ip-api.ru/|https://cdn-ssl.ip-api.ru/flags/png250/ch.png|String|
+|flagPng_1000px|Ссылка на изображение государственного флага в формате PNG 1000x1000px. При отправке запроса без HTTPS ссылка на флаг будет подгружаться с домена http://cdn-nossl.ip-api.ru/|https://cdn-ssl.ip-api.ru/flags/png1000/ch.png|String|
+|flagSvg|Ссылка на изображение государственного флага в формате SVG. При отправке запроса без HTTPS ссылка на флаг будет подгружаться с домена http://cdn-nossl.ip-api.ru/|https://cdn-ssl.ip-api.ru/flags/svg/ch.svg|String|
+|altSpellings|Альтернативные правописания названия страны|Swiss Confederation [0],[1],[2],[...],[10]|String|
+|region|Континент|Europe|String|
+|subRegion|Принадлежность к группе государств|Western Europe|String|
+|language|Государственные языки|German [0],[1],[2],[...],[10]|String|
+|languages|Языковые коды ISO 639-1|de [0],[1],[2],[...],[10]|String|
+|translations|Название страны на различных мировых языках|Svizzera [0],[1],[2],[...],[10]|String|
+|population|Население страны (данные обновляются раз в год)|8256000|Int
+|latlon|Широта и долгота|Zurich|47.3769,8.54169
+|demonym|Этнохороним (Wiki)|Swiss|String|
+|borders|Граничащие государства|AUT [0],[1],[2],[...],[10]|String|
+|area|Площадь страны в км2|41284|Int|
+|gini|Коэффициент Джини (Wiki)|33.7|Float
+|timeZones|Временные зоны страны|UTC+01:00 [0],[1],[2],[...],[10]|String|
