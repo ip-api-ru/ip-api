@@ -151,6 +151,7 @@ val result = URL("https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&q
 /* HTTP val result = URL("http://nossl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ&query=конкретный-IP-адрес&proxy=0 или 1&info=0 или 1").readText() */
 ```
 
-
+```
 - Официальный сайт сервиса IP-API: https://ip-api.ru/
 - Документация по всем API: https://ip-api.ru/documentation/ или https://github.com/ip-api-ru/
+```
