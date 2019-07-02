@@ -29,7 +29,7 @@ HTTPS/HTTP
     Пример URL на отправку запроса на получение базовой информации и ответ:
     https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ
 
-"as":"AS9009 M247 Ltd"
+{"as":"AS9009 M247 Ltd"
 "city":"Zurich"
 "country":"Switzerland"
 "countryCode":"CH"
@@ -44,6 +44,7 @@ HTTPS/HTTP
 "status":"success"
 "timezone":"Europe/Zurich"
 "zip":"8010"
+}
 
 В данном ответе Вы получаете информацию об IP-адресе, с которого был осуществлен запрос.
 При добавлении ключей proxy и/или info будут отправлены дополнительные платные запросы на получение информации об IP-адресе. При желании, укажите в ключе query конкретный IP-адрес.
