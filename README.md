@@ -29,21 +29,22 @@ HTTPS/HTTP
     Пример URL на отправку запроса на получение базовой информации и ответ:
     https://ssl.ip-api.ru/ip-api.json?apiKey=ваш-api-ключ
 ```json
-{"as":"AS9009 M247 Ltd",
-"city":"Zurich",
-"country":"Switzerland",
-"countryCode":"CH",
-"isp":"M247 Europe",
-"lat":"47.3769",
-"lon":"8.54169",
-"org":"M247 LTD",
-"query":"37.120.137.58",
-"region":"ZH",
-"regionName":"Zurich",
-"reverse":"",
-"status":"success",
-"timezone":"Europe/Zurich",
-"zip":"8010"
+{
+    "as":"AS9009 M247 Ltd",
+    "city":"Zurich",
+    "country":"Switzerland",
+    "countryCode":"CH",
+    "isp":"M247 Europe",
+    "lat":"47.3769",
+    "lon":"8.54169",
+    "org":"M247 LTD",
+    "query":"37.120.137.58",
+    "region":"ZH",
+    "regionName":"Zurich",
+    "reverse":"",
+    "status":"success",
+    "timezone":"Europe/Zurich",
+    "zip":"8010"
 }
 ```
 В данном ответе Вы получаете информацию об IP-адресе, с которого был осуществлен запрос.
