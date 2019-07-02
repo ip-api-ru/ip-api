@@ -106,3 +106,4 @@
 |timeZones|Временные зоны страны|UTC+01:00 [0],[1],[2],[...],[10]|String|
 
 Официальный сайт сервиса IP-API: https://ip-api.ru/
+Документация по всем API: https://ip-api.ru/documentation/ или https://github.com/ip-api-ru/
