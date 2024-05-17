@@ -119,5 +119,4 @@
 }
 ```
 
-
-Официальный сайт сервиса IP-API: https://ip-api.ru/ *** https://github.com/ip-api-ru/
+По всем вопросам обращайтесь на email hello@ip-api.ru или https://t.me/zlatacodebra
